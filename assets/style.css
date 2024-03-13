@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Estilos para las celdas de encabezado */
+  th {
+    background-color: #119ba5;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    color: white;
+  }
+  
+  /* Estilos para las celdas de datos */
+  td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  
+  /* Estilos para filas alternadas */
+  tr:nth-child(even) {
+    background-color: #b6e1e8;
+  }
