@@ -26,5 +26,12 @@ const arrayRadiologia = [
     { hora: "14:00", especialista: "RAQUEL VILLASECA", paciente: "ANA SEPULVEDA", rut: "14441281-0", prevision: "ISAPRE"},
   ];
 
-  document.write(`<p> Primer paciente radiologia: ${arrayRadiologia[0].paciente}- ${arrayRadiologia[0].prevision}. |
-  ${arrayRadiologia[arrayRadiologia.length - 1].paciente} - ${arrayRadiologia[arrayRadiologia.length - 1].prevision}</p>`)
+  document.write(`<p> Primer paciente radiologia: ${arrayRadiologia[0].paciente}- ${arrayRadiologia[0].prevision}. | Ultimo paciente Radiologia:
+  ${arrayRadiologia[arrayRadiologia.length - 1].paciente} - ${arrayRadiologia[arrayRadiologia.length - 1].prevision}</p>`);
+
+  document.write(`<p> Primer paciente Traumatologia: ${arrayTraumatologia[0].paciente}- ${arrayTraumatologia[0].prevision}. | Ultimo paciente Traumatologia:
+  ${arrayTraumatologia[arrayTraumatologia.length - 1].paciente} - ${arrayTraumatologia[arrayRadiologia.length - 1].prevision}</p>`);
+  
+  document.write(`<p> Primer paciente Dental: ${arrayDental[0].paciente}- ${arrayDental[0].prevision}. | Ultimo paciente Dental:
+  ${arrayDental[arrayDental.length - 1].paciente} - ${arrayDental[arrayDental.length - 1].prevision}</p>`);
+  
