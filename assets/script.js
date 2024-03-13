@@ -1,3 +1,5 @@
+document.write('<p>Primera y ultima atencion de cada listado:</p>');
+
 const arrayRadiologia = [
     { hora: "11:00", especialista: "IGNACIO SCHULZ", paciente: "FRANCISCA ROJAS", rut: "9878782-1", prevision: "FONASA"},
     { hora: "11:30", especialista: "FEDERICO SUBERCASEAUX", paciente: "PAMELA ESTRADA", rut: "15345241-3", prevision: "ISAPRE"},
@@ -34,4 +36,52 @@ const arrayRadiologia = [
   
   document.write(`<p> Primer paciente Dental: ${arrayDental[0].paciente}- ${arrayDental[0].prevision}. | Ultimo paciente Dental:
   ${arrayDental[arrayDental.length - 1].paciente} - ${arrayDental[arrayDental.length - 1].prevision}</p>`);
+
+
+
+
+var tablaBody = document.getElementById("tablaBody");
+
+
+arrayRadiologia.forEach(function(cita) {
+
+  var fila = tablaBody.insertRow();
+
+
+  fila.insertCell(0).textContent = cita.hora;
+  fila.insertCell(1).textContent = cita.especialista;
+  fila.insertCell(2).textContent = cita.paciente;
+  fila.insertCell(3).textContent = cita.rut;
+  fila.insertCell(4).textContent = cita.prevision;
+});
+
+
+  var tablaBody = document.getElementById("tablaBody");
+
+
+  arrayDental.forEach(function(cita) {
+    
+    var fila = tablaBody.insertRow();
   
+   
+    fila.insertCell(0).textContent = cita.hora;
+    fila.insertCell(1).textContent = cita.especialista;
+    fila.insertCell(2).textContent = cita.paciente;
+    fila.insertCell(3).textContent = cita.rut;
+    fila.insertCell(4).textContent = cita.prevision;
+  });
+
+
+var tablaBody = document.getElementById("tablaBody");
+
+arrayRadiologia.forEach(function(cita) {
+
+  var fila = tablaBody.insertRow();
+
+
+  fila.insertCell(0).textContent = cita.hora;
+  fila.insertCell(1).textContent = cita.especialista;
+  fila.insertCell(2).textContent = cita.paciente;
+  fila.insertCell(3).textContent = cita.rut;
+  fila.insertCell(4).textContent = cita.prevision;
+});
